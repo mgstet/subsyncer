@@ -5,8 +5,8 @@ import subprocess
 import shutil
 import glob
 
-vids = glob.glob("*.mkv")
-subs = glob.glob("*.srt")
+vids = sorted(glob.glob("*.mkv"))
+subs = sorted(glob.glob("*.srt"))
 
 os.mkdir("temp")
 
